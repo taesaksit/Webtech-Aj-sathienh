@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preset Tae Saksit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    
+}
+
+h1 {
+    color: #333;
+}
+.container {
+    margin-top:30px ;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 550px; /* กำหนดความกว้างของคอนเทนเนอร์ */
+   
+    box-sizing: border-box;
+}
+
+form {
+    display: block; /* แสดงเป็น block */
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+
+    
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    display: block; /* แสดงเป็น block */
+    width: auto; /* ปรับความกว้างให้พอดีกับข้อความ */
+    margin-top: 10px; /* เพิ่มระยะห่างด้านบน */
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(24, 87, 150) ;
+    transform: translateY(-5px);
+    transition: .3s;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+   
+}
+
+.radio {
+    
+    margin: 10px 10px;
+    color: #312d2d;
+}
+
+input[type="radio"] {
+    margin: 0;
+    width: auto;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold;
+
+}
+
+
+
+</style>
+<body>
+
+    <!-- form -->
+    <div class="container">
+        <h1>ฟอร์มกรอกข้อมูล</h1>
+        <form action="">
+            <input type="text" name="username" >
+            <input type="password" name="password">
+            <div class="gender">
+                <input type="radio" value="none" id="male" name="gender" checked/>
+                <label for="male" class="radio">Male</label>
+                <input type="radio" value="none" id="female" name="gender" />
+                <label for="female" class="radio">Female</label>
+              </div>
+            <input type="submit" >
+        </form>
+    </div>
+    
+</body>
+</html>
