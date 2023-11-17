@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksit Page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<!-- style -->
+<style>
+    body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f6f5f5;
+}
+
+.border-top{
+    border-radius: 10px 10px;
+    padding: 10px 10px ;
+   
+}
+.border-top h2{
+    text-align: center;
+}
+.border-top .img{
+    text-align: center;
+}
+.border-top img{
+   max-width: 100%;
+   margin: 15px 0;
+}
+.border-top img:hover{
+    transition: .3s;
+    opacity: 0.8;
+    transform: translateX(10px);
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center  ;
+    margin: 30px;
+    /* background-color: #4c51af; */
+   
+}
+
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 65%;
+
+}
+
+th{
+    font-weight: 800;
+    background-color: rgb(43, 46, 45);
+    color: white;
+}
+
+td, th {
+    border: 1px solid #ccc9c9;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .form{
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+  }
+
+  input[type=text] {
+    width: 250px;
+    padding: 6px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    /* width: 100%; */
+    background-color: #4c51af;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   
+</style>
+
+<body>
+
+
+    <div class="border-top">
+        <h2>University of Phayao</h2>
+        <div class="img">
+            <a href="https://www.up.ac.th/th/" target="_blank">
+                <img href="" src="https://i.pinimg.com/736x/9d/fe/be/9dfebea11d480cbf0da5c25a522d0b69.jpg"
+                    alt="University image">
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="table">
+        <h2>My friends</h2>
+        <table>
+            <tr>
+                <th>รหัส</th>
+                <th>ชื่อ</th>
+                <th>นามสกุล</th>
+                <th>ที่อยู่</th>
+                <th colspan="2">เบอร์โทร</th>
+                <th>อีเมล์</th>
+            </tr>
+            <tr>
+                <td>64024578</td>
+                <td>จันทวรรณ์</td>
+                <td>มนฉนวน</td>
+                <td>นครสวรรค์</td>
+                <td>087271381</td>
+                <td>087271381</td>
+                <td>jntx@gmail.com</td>
+            </tr>
+            <tr>
+                <td>64020451</td>
+                <td>ศิริลักษณ์</td>
+                <td>เชื้อสาวถี</td>
+                <td>บึงกาฬ</td>
+                <td>08234568</td>
+                <td>08234568</td>
+                <td>breeze@gmail.com</td>
+            </tr>
+            <tr>
+                <td>64020440</td>
+                <td>ศักดิ์สิทธิ์</td>
+                <td>สบายพร</td>
+                <td>พะเยา</td>
+                <td>0979687444</td>
+                <td>097968556</td>
+                <td>taesasksit09@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+
+  <div class="form">
+   
+    <h2>สมัครเป็นเพื่อน</h2>
+    <form action="#">
+        <label for="id">ID:</label><br>
+        <input type="text" ><br>
+        <label for="firstName">Name:</label><br>
+        <input type="text"><br>
+        <label for="lastName">Last name:</label><br>
+        <input type="text"><br>
+       
+        <input type="radio" name="sex" value="Female"> Female<br>
+        <input type="radio" name="sex" value="Male">Male<br>
+
+        <input type="range" name="age" min="0" max="50" oninput="Output.value=parseInt(age.value)">
+        <output name="Output"></output>  <br>
+
+        <input type="submit" value="Submit" class="btn">
+    </form>
+  </div>
+   
+
+
+
+</body>
+
+</html> 
