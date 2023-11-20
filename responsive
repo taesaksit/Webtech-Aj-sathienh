@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 4</title>
+    <!-- CSS BST 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<!-- Script BST 4 -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+
+    <div class="jumbotron text-center m-0">
+        <div class="img">
+            <a href="https://www.up.ac.th/th/" target="_blank">
+                <img href="" src="https://i.pinimg.com/736x/9d/fe/be/9dfebea11d480cbf0da5c25a522d0b69.jpg"
+                    alt="University image" width="550px" class="img-fluid img-thumbnail shadow">
+            </a>
+            <p class="h4 m-2">My University </p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="http://ict.up.ac.th" target="_blank">คณะ ICT </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="conainer" style="margin: 30px;">
+        <div class="row">
+            <div class="col-md-12 ">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>รหัส</th>
+                            <th>ชื่อ</th>
+                            <th>นามสกุล</th>
+                            <th>ที่อยู่</th>
+                            <th colspan="2">เบอร์โทร</th>
+                            <th>อีเมล์</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>64024578</td>
+                            <td>จันทวรรณ์</td>
+                            <td>มนฉนวน</td>
+                            <td>นครสวรรค์</td>
+                            <td>087271381</td>
+                            <td>087271381</td>
+                            <td>jntx@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>64020451</td>
+                            <td>ศิริลักษณ์</td>
+                            <td>เชื้อสาวถี</td>
+                            <td>บึงกาฬ</td>
+                            <td>08234568</td>
+                            <td>08234568</td>
+                            <td>breeze@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>64020440</td>
+                            <td>ศักดิ์สิทธิ์</td>
+                            <td>สบายพร</td>
+                            <td>พะเยา</td>
+                            <td>0979687444</td>
+                            <td>097968556</td>
+                            <td>taesasksit09@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-4">
+                <div class="card p-3 shadow">
+                    <form action="#" autocomplete="off" >
+                        <h5>สมัครเป็นเพื่อน</h5>
+                        <label for="id">ID:</label><br>
+                        <input type="text" name="id" id="id" class="form-control">
+                        <label for="firstName">Name:</label>
+                        <input type="text" name="name" id="name" class="form-control">
+                        <label for="lastName">Last name:</label>
+                        <input type="text" name="lasname" class="form-control">
+
+                        <input type="radio" name="sex" value="Female" class=""> Female<br>
+                        <input type="radio" name="sex" value="Male" class="">Male<br>
+
+                        <input type="range" name="age" min="0" max="50" oninput="Output.value=parseInt(age.value)">
+                        <output name="Output"></output> <br>
+
+                        <input type="checkbox" name="vehicle" value="Bike" checked><label>i have bike</label><br>
+                        <input type="checkbox" name="vehicle" value="Car" class=""><label>i have car</label><br>
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                        <input type="reset" name="" id="" value="Reset" class="btn btn-danger">
+
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="card shadow p-3">
+                    <h1>ประวัติมหาลัยพะเยา</h1>
+                    <p>
+                        เมื่อวันที่ 20 มิถุนายน พ.ศ. 2538 คณะรัฐมนตรี มีมติให้ขยายเขตการศึกษาไปยังส่วนภูมิภาคได้ใน 11
+                        จังหวัด
+                        คือ จังหวัดหนองคาย พะเยา จันทบุรี แพร่ สุราษฎร์ธานี ตรัง สกลนคร กาญจนบุรี ราชบุรี ชุมพร
+                        และปราจีนบุรี
+                        ตามที่ทบวงมหาวิทยาลัยเสนอ เพื่อเป็นการเฉลิมพระเกียรติพระบาทสมเด็จพระบรมชนกาธิเบศร
+                        มหาภูมิพลอดุลยเดชมหาราช ในวโรกาสที่ทรงครองสิริราชสมบัติครบ 50 ปี
+                        มหาวิทยาลัยนเรศวรจึงได้จัดทำโครงการกระจายโอกาสทางการศึกษาไปยังส่วนภูมิภาค (จังหวัดพะเยา)
+                        ของมหาวิทยาลัยนเรศวร ขึ้นเพื่อสนองนโยบายดังกล่าว
+                        โดยใช้อาคารเรียนของโรงเรียนพะเยาพิทยาคมเป็นอาคารเรียนชั่วคราว
+
+                        ต่อมาในคราวประชุมคณะรัฐมนตรี เมื่อวันที่ 8 ตุลาคม พ.ศ. 2539 คณะรัฐมนตรีได้มีมติให้ใช้ชื่อว่า
+                        "มหาวิทยาลัยนเรศวร วิทยาเขตสารสนเทศพะเยา" และได้ย้ายมาจัดการศึกษา ณ สถานที่ปัจจุบันในปี พ.ศ.
+                        2542
+
+                        ต่อมาในคราวประชุมสภามหาวิทยาลัยนเรศวร ครั้งที่ 13 (4/2550) เมื่อวันที่ 21 กรกฎาคม พ.ศ. 2550
+                        ได้มีมติให้เปลี่ยนชื่อ มหาวิทยาลัยนเรศวร วิทยาเขตสารสนเทศพะเยา เป็น "มหาวิทยาลัยนเรศวร พะเยา"
+                        เพื่อเตรียมยกฐานะเป็นมหาวิทยาลัยเอกเทศในอนาคตต่อไป
+                        หลังจากนั้นในที่ประชุมคณะรัฐมนตรีมีมติอนุมัติหลักการร่างพระราชบัญญัติมหาวิทยาลัยพะเยา พ.ศ. ...
+                        เมื่อวันที่ 23 มิถุนายน พ.ศ. 2552
+
+                        ในวันที่ 12 กรกฎาคม พ.ศ. 2553 พระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร
+                        ได้มีพระบรมราชโองการโปรดเกล้าฯ ให้ตราพระราชบัญญัติมหาวิทยาลัยพะเยา พ.ศ. 2553 ขึ้น
+                        และประกาศในราชกิจจานุเบกษาเมื่อวันที่ 16 กรกฎาคม พ.ศ. 2553
+                        มหาวิทยาลัยพะเยาจึงได้แยกตัวออกจากมหาวิทยาลัยนเรศวรเป็นมหาวิทยาลัยเอกเทศนับตั้งแต่นั้นเป็นต้นมา
+
+                        ปัจจุบันมหาวิทยาลัยพะเยา ตั้งอยู่ที่ตำบลแม่กา อำเภอเมืองพะเยา จังหวัดพะเยา มีพื้นที่ประมาณ 5,700
+                        ไร่
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
