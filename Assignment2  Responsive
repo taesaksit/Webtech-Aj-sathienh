@@ -24,156 +24,219 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
+    }
+
+    nav {
+        background: linear-gradient(to right, #9837a5, #000000);
+    }
+
+    .img a img:hover {
+        transition: .4s;
+        transform: scale(1.05);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    body{
+        background-image: url('https://media.istockphoto.com/id/1264684053/photo/abstract-blur-image-background-of-shopping-mall-department-store.jpg?s=612x612&w=0&k=20&c=21gEfKy8-MTYLVvHSvsHexJ4R25ZL1tujMpACxK9zaw=');
+        background-size: cover;
+        
+       
+
     }
 </style>
 
 <body>
 
     <div class="jumbotron text-center m-0">
+
         <div class="img">
             <a href="https://www.up.ac.th/th/" target="_blank">
                 <img href="" src="https://i.pinimg.com/736x/9d/fe/be/9dfebea11d480cbf0da5c25a522d0b69.jpg"
-                    alt="University image" width="550px" class="img-fluid img-thumbnail shadow">
+                    alt="University image" width="650px" class="img-fluid img-thumbnail ">
             </a>
-            <p class="h4 m-2">My University </p>
+            <div class="mt-3">
+                <p class="h3 text-dark text-decoration-none " id="my-university-link"> My University</p>
+            </div>
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item ">
-                    <a class="nav-link" href="http://ict.up.ac.th" target="_blank">คณะ ICT </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
+            <div class="collapse navbar-collapse  navbar-fade " id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="http://ict.up.ac.th" target="_blank">คณะ ICT </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
 
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
         </div>
     </nav>
     <div class="conainer" style="margin: 30px;">
         <div class="row">
-            <div class="col-md-12 ">
-                <table class="table table-responsive">
-                    <thead>
-                        <tr>
-                            <th>รหัส</th>
-                            <th>ชื่อ</th>
-                            <th>นามสกุล</th>
-                            <th>ที่อยู่</th>
-                            <th colspan="2">เบอร์โทร</th>
-                            <th>อีเมล์</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>64024578</td>
-                            <td>จันทวรรณ์</td>
-                            <td>มนฉนวน</td>
-                            <td>นครสวรรค์</td>
-                            <td>087271381</td>
-                            <td>087271381</td>
-                            <td>jntx@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>64020451</td>
-                            <td>ศิริลักษณ์</td>
-                            <td>เชื้อสาวถี</td>
-                            <td>บึงกาฬ</td>
-                            <td>08234568</td>
-                            <td>08234568</td>
-                            <td>breeze@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>64020440</td>
-                            <td>ศักดิ์สิทธิ์</td>
-                            <td>สบายพร</td>
-                            <td>พะเยา</td>
-                            <td>0979687444</td>
-                            <td>097968556</td>
-                            <td>taesasksit09@gmail.com</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-md-12">
+
+                <div class="card my-3  ">
+                    <table class="table table-hover  ">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>รหัส</th>
+                                <th>ชื่อ</th>
+                                <th>นามสกุล</th>
+                                <th>ที่อยู่</th>
+                                <th colspan="2">เบอร์โทร</th>
+                                <th>อีเมล์</th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr>
+                                <td>64024578</td>
+                                <td>จันทวรรณ์</td>
+                                <td>มนฉนวน</td>
+                                <td>นครสวรรค์</td>
+                                <td>087271381</td>
+                                <td>087271381</td>
+                                <td>jntx@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>64020451</td>
+                                <td>ศิริลักษณ์</td>
+                                <td>เชื้อสาวถี</td>
+                                <td>บึงกาฬ</td>
+                                <td>08234568</td>
+                                <td>08234568</td>
+                                <td>breeze@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>64020440</td>
+                                <td>ศักดิ์สิทธิ์</td>
+                                <td>สบายพร</td>
+                                <td>พะเยา</td>
+                                <td>0979687444</td>
+                                <td>097968556</td>
+                                <td>taesasksit09@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
-            <div class="col-4">
-                <div class="card p-3 shadow">
-                    <form action="#" autocomplete="off" >
-                        <h5>สมัครเป็นเพื่อน</h5>
-                        <label for="id">ID:</label><br>
-                        <input type="text" name="id" id="id" class="form-control">
-                        <label for="firstName">Name:</label>
-                        <input type="text" name="name" id="name" class="form-control">
-                        <label for="lastName">Last name:</label>
-                        <input type="text" name="lasname" class="form-control">
+            <div class="col-md-4">
+                <div class="card  my-3  p-3">
 
-                        <input type="radio" name="sex" value="Female" class=""> Female<br>
-                        <input type="radio" name="sex" value="Male" class="">Male<br>
+                    <form action="#" autocomplete="off">
+                        <h5 class="mb-3">สมัครเป็นเพื่อน</h5>
 
-                        <input type="range" name="age" min="0" max="50" oninput="Output.value=parseInt(age.value)">
-                        <output name="Output"></output> <br>
+                        <div class="form-group">
+                            <label for="id">ID:</label>
+                            <input type="text" name="id" id="id" class="form-control">
+                        </div>
 
-                        <input type="checkbox" name="vehicle" value="Bike" checked><label>i have bike</label><br>
-                        <input type="checkbox" name="vehicle" value="Car" class=""><label>i have car</label><br>
-                        <input type="submit" value="Submit" class="btn btn-primary">
-                        <input type="reset" name="" id="" value="Reset" class="btn btn-danger">
+                        <div class="form-group">
+                            <label for="firstName">Name:</label>
+                            <input type="text" name="name" id="name" class="form-control">
+                        </div>
 
+                        <div class="form-group">
+                            <label for="lastName">Last name:</label>
+                            <input type="text" name="lastname" class="form-control">
+                        </div>
 
+                        <div class="form-group">
+                            <label>Sex:</label>
+                            <div class="form-check">
+                                <input type="radio" name="sex" value="Female" class="form-check-input">
+                                <label class="form-check-label">Female</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="sex" value="Male" class="form-check-input">
+                                <label class="form-check-label">Male</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group  w-50">
+                            <label for="age">Age: <output name="Output" class="font-weight-bold"></output></label>
+                            <input type="range" name="age" id="age" min="0" max="50"
+                                oninput="Output.value=parseInt(age.value)" class="form-control-range">
+
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" name="vehicle" value="Bike" checked class="form-check-input">
+                                <label class="form-check-label">I have a bike</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="vehicle" value="Car" class="form-check-input">
+                                <label class="form-check-label">I have a car</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-danger">Reset</button>
                     </form>
                 </div>
             </div>
-            <div class="col-sm-8">
-                <div class="card shadow p-3">
-                    <h1>ประวัติมหาลัยพะเยา</h1>
-                    <p>
-                        เมื่อวันที่ 20 มิถุนายน พ.ศ. 2538 คณะรัฐมนตรี มีมติให้ขยายเขตการศึกษาไปยังส่วนภูมิภาคได้ใน 11
-                        จังหวัด
-                        คือ จังหวัดหนองคาย พะเยา จันทบุรี แพร่ สุราษฎร์ธานี ตรัง สกลนคร กาญจนบุรี ราชบุรี ชุมพร
-                        และปราจีนบุรี
-                        ตามที่ทบวงมหาวิทยาลัยเสนอ เพื่อเป็นการเฉลิมพระเกียรติพระบาทสมเด็จพระบรมชนกาธิเบศร
-                        มหาภูมิพลอดุลยเดชมหาราช ในวโรกาสที่ทรงครองสิริราชสมบัติครบ 50 ปี
-                        มหาวิทยาลัยนเรศวรจึงได้จัดทำโครงการกระจายโอกาสทางการศึกษาไปยังส่วนภูมิภาค (จังหวัดพะเยา)
-                        ของมหาวิทยาลัยนเรศวร ขึ้นเพื่อสนองนโยบายดังกล่าว
-                        โดยใช้อาคารเรียนของโรงเรียนพะเยาพิทยาคมเป็นอาคารเรียนชั่วคราว
-
-                        ต่อมาในคราวประชุมคณะรัฐมนตรี เมื่อวันที่ 8 ตุลาคม พ.ศ. 2539 คณะรัฐมนตรีได้มีมติให้ใช้ชื่อว่า
-                        "มหาวิทยาลัยนเรศวร วิทยาเขตสารสนเทศพะเยา" และได้ย้ายมาจัดการศึกษา ณ สถานที่ปัจจุบันในปี พ.ศ.
-                        2542
-
-                        ต่อมาในคราวประชุมสภามหาวิทยาลัยนเรศวร ครั้งที่ 13 (4/2550) เมื่อวันที่ 21 กรกฎาคม พ.ศ. 2550
-                        ได้มีมติให้เปลี่ยนชื่อ มหาวิทยาลัยนเรศวร วิทยาเขตสารสนเทศพะเยา เป็น "มหาวิทยาลัยนเรศวร พะเยา"
-                        เพื่อเตรียมยกฐานะเป็นมหาวิทยาลัยเอกเทศในอนาคตต่อไป
-                        หลังจากนั้นในที่ประชุมคณะรัฐมนตรีมีมติอนุมัติหลักการร่างพระราชบัญญัติมหาวิทยาลัยพะเยา พ.ศ. ...
-                        เมื่อวันที่ 23 มิถุนายน พ.ศ. 2552
-
-                        ในวันที่ 12 กรกฎาคม พ.ศ. 2553 พระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร
-                        ได้มีพระบรมราชโองการโปรดเกล้าฯ ให้ตราพระราชบัญญัติมหาวิทยาลัยพะเยา พ.ศ. 2553 ขึ้น
-                        และประกาศในราชกิจจานุเบกษาเมื่อวันที่ 16 กรกฎาคม พ.ศ. 2553
-                        มหาวิทยาลัยพะเยาจึงได้แยกตัวออกจากมหาวิทยาลัยนเรศวรเป็นมหาวิทยาลัยเอกเทศนับตั้งแต่นั้นเป็นต้นมา
-
-                        ปัจจุบันมหาวิทยาลัยพะเยา ตั้งอยู่ที่ตำบลแม่กา อำเภอเมืองพะเยา จังหวัดพะเยา มีพื้นที่ประมาณ 5,700
-                        ไร่
-                    </p>
-                </div>
-
+            <div class="col-md-8">
+                
+                    <div class="card p-2 shadow my-3">
+                        <div class="row">
+                            <div class="col-md-4 ">
+                               <img src="https://www.up.ac.th/th/img/view/university-of-phayao.jpg" alt="" class=" img-fluid w-100 ">
+                            </div>
+                            <div class="col-md-8">
+                                <h2>ความเป็นมาของมหาวิทยาลัยพะเยา</h2>
+                                <p class="text-black-50 " style="height: 200px; overflow: scroll;">
+                                    เมื่อวันที่ 20 มิถุนายน พ.ศ. 2538 คณะรัฐมนตรี มีมติให้ขยายเขตการศึกษาไปยังส่วนภูมิภาคได้ใน 11 จังหวัด คือ จังหวัดหนองคาย พะเยา จันทบุรี แพร่ สุราษฎร์ธานี ตรัง สกลนคร กาญจนบุรี ราชบุรี ชุมพร และปราจีนบุรี ตามที่ทบวงมหาวิทยาลัยเสนอ เพื่อเป็นการเฉลิมพระเกียรติพระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช ในวโรกาสที่ทรงครองสิริราชสมบัติครบ 50 ปี มหาวิทยาลัยนเรศวรจึงได้จัดทำโครงการกระจายโอกาสทางการศึกษาไปยังส่วนภูมิภาค (จังหวัดพะเยา) ของมหาวิทยาลัยนเรศวร ขึ้นเพื่อสนองนโยบายดังกล่าว โดยใช้อาคารเรียนของโรงเรียนพะเยาพิทยาคมเป็นอาคารเรียนชั่วคราว
+    
+                                    ต่อมาในคราวประชุมคณะรัฐมนตรี เมื่อวันที่ 8 ตุลาคม พ.ศ. 2539 คณะรัฐมนตรีได้มีมติให้ใช้ชื่อว่า "มหาวิทยาลัยนเรศวร วิทยาเขตสารสนเทศพะเยา" และได้ย้ายมาจัดการศึกษา ณ สถานที่ปัจจุบันในปี พ.ศ. 2542
+                               
+                                    ต่อมาในคราวประชุมสภามหาวิทยาลัยนเรศวร ครั้งที่ 13 (4/2550) เมื่อวันที่ 21 กรกฎาคม พ.ศ. 2550 ได้มีมติให้เปลี่ยนชื่อ มหาวิทยาลัยนเรศวร วิทยาเขตสารสนเทศพะเยา เป็น "มหาวิทยาลัยนเรศวร พะเยา" เพื่อเตรียมยกฐานะเป็นมหาวิทยาลัยเอกเทศในอนาคตต่อไป หลังจากนั้นในที่ประชุมคณะรัฐมนตรีมีมติอนุมัติหลักการร่างพระราชบัญญัติมหาวิทยาลัยพะเยา พ.ศ. ... เมื่อวันที่ 23 มิถุนายน พ.ศ. 2552
+                               
+                                    ในวันที่ 12 กรกฎาคม พ.ศ. 2553 พระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร ได้มีพระบรมราชโองการโปรดเกล้าฯ ให้ตราพระราชบัญญัติมหาวิทยาลัยพะเยา พ.ศ. 2553 ขึ้น และประกาศในราชกิจจานุเบกษาเมื่อวันที่ 16 กรกฎาคม พ.ศ. 2553 มหาวิทยาลัยพะเยาจึงได้แยกตัวออกจากมหาวิทยาลัยนเรศวรเป็นมหาวิทยาลัยเอกเทศนับตั้งแต่นั้นเป็นต้นมา
+                               
+                                    ปัจจุบันมหาวิทยาลัยพะเยา ตั้งอยู่ที่ตำบลแม่กา อำเภอเมืองพะเยา จังหวัดพะเยา มีพื้นที่ประมาณ 5,700 ไร่
+                                </p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="card p-2 shadow my-3">
+                        <div class="row">
+                            <div class="col-md-4 ">
+                               <img src="https://www.up.ac.th/th/img/view/p2.jpg" alt="" class=" img-fluid w-100 ">
+                            </div>
+                            <div class="col-md-8">
+                                <h2>สมเด็จพระนเรศวรมหาราช</h2>
+                                <p class="text-black-50 " style="height: 200px; overflow: scroll;">
+                                    พระบรมราชานุสาวรีย์สมเด็จพระนเรศวรมหาราช สร้างขึ้นเพื่อเป็นศูนย์รวมจิตใจ และเป็นที่เคารพสักการะ ของผู้บริหาร คณาจารย์ บุคลากร นิสิต และประชาชนทั่วไป โดยพระบรมราชานุสาวรีย์ฯ แห่งนี้ 
+                                    ได้จำลองรูปแบบมาจาก พระบรมรูปสมเด็จพระนเรศวรมหาราช ประดิษฐาน ณ มหาวิทยาลัยนเรศวร จังหวัดพิษณุโลก มีขนาดใหญ่ เป็น ๒ เท่าครึ่งของพระองค์จริง ความสูง ๔.๔๐ เมตร มีพระราชอิริยาบถทรงหลั่งทักษิโณทกจากสุวรรณภิงคาร
+                                     เพื่อประกาสอิสรภาพ ที่เมืองแครง ในเขตแดนเมียนมา โดยเน้น ความสง่างาม ลักษณะที่เข้มแข็ง และการทรงไว้ซึ่งการมีพระราชอำนาจ
+                                </p>
+                            </div>
+                        </div>
+                    
+                    </div>
+            
             </div>
-        </div>
-    </div>
+         </div>
 
 
 
 </body>
 
 </html>
+
