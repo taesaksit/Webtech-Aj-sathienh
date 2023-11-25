@@ -62,7 +62,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <img src="https://upload.wikimedia.org/wikipedia/th/thumb/0/00/University_of_Phayao_Logo.svg/1200px-University_of_Phayao_Logo.svg.png" alt="" width="40px">
+            <a class="navbar-brand" href="#">
+                มหาวิทยาลัยพะเยา</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -71,7 +73,7 @@
             <div class="collapse navbar-collapse  navbar-fade " id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item ">
-                        <a class="nav-link" href="http://ict.up.ac.th" target="_blank">คณะ ICT </a>
+                        <a class="nav-link" href="http://ict.up.ac.th" target="_blank">เกี่ยวกับ ICT </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
@@ -89,8 +91,8 @@
         <div class="row">
             <div class="col-md-12">
 
-                <div class="card my-3  ">
-                    <table class="table table-hover  table-responsive ">
+                
+                    <table class="table table-hover table-responsive-md">
                         <thead class="thead-dark">
                             <tr>
                                 <th>รหัส</th>
@@ -101,7 +103,7 @@
                                 <th>อีเมล์</th>
                             </tr>
                         </thead>
-                        <tbody >
+                        <tbody class="bg-light" >
                             <tr>
                                 <td>64024578</td>
                                 <td>จันทวรรณ์</td>
@@ -131,7 +133,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                
 
             </div>
             <div class="col-md-4">
@@ -195,7 +197,7 @@
                     <div class="card p-2 shadow my-3">
                         <div class="row">
                             <div class="col-md-4 ">
-                               <img src="https://www.up.ac.th/th/img/view/university-of-phayao.jpg" alt="" class=" img-fluid w-100 ">
+                               <img src="" alt="image Phayao" class=" img-fluid w-100 ">
                             </div>
                             <div class="col-md-8">
                                 <h2>ความเป็นมาของมหาวิทยาลัยพะเยา</h2>
@@ -217,7 +219,7 @@
                     <div class="card p-2 shadow my-3">
                         <div class="row">
                             <div class="col-md-4 ">
-                               <img src="https://www.up.ac.th/th/img/view/p2.jpg" alt="" class=" img-fluid w-100 ">
+                               <img src="" alt="image Naresuen" class=" img-fluid w-100 ">
                             </div>
                             <div class="col-md-8">
                                 <h2>สมเด็จพระนเรศวรมหาราช</h2>
@@ -239,4 +241,3 @@
 </body>
 
 </html>
-
